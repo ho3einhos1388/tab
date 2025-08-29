@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.tabs button.active{
+    background: transparent;
+}
+.tabs button:not(.active){background: #b6c9f0;}
+
+.contans div.active{
+    display: block;
+}
+.contans div:not(.active){
+    display: none;
+}

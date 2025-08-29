@@ -5,40 +5,29 @@ const contant1 = document.getElementById("contant1");
 const contant2 = document.getElementById("contant2");
 const contant3 = document.getElementById("contant3");
 btn1.addEventListener("click", function () {
-  contant1.classList.add("block");
-  contant1.classList.remove("hidden");
-  contant2.classList.add("hidden");
-  contant2.classList.remove("block");
-  contant3.classList.add("hidden");
-  contant3.classList.remove("block");
+  contant1.classList.add("active");
+  contant2.classList.remove("active");
+  contant3.classList.remove("active");
 
-  btn1.classList.add("bg-[#ffffff]");
-  btn1.classList.remove("bg-[#b6c9f0]");
-
-  btn2.classList.remove("bg-[#ffffff]");
-  btn3.classList.remove("bg-[#ffffff]");
+  btn1.classList.add("active");
+  btn2.classList.remove("active");
+  btn3.classList.remove("active");
 });
 btn2.addEventListener("click", function () {
-  contant1.classList.add("hidden");
-  contant1.classList.remove("block");
-  contant2.classList.add("block");
-  contant2.classList.remove("hidden");
-  contant3.classList.add("hidden");
-  contant3.classList.remove("block");
-  btn2.classList.add("bg-[#ffffff]");
-  btn2.classList.remove("bg-[#b6c9f0]");
-  btn1.classList.remove("bg-[#ffffff]");
-  btn3.classList.remove("bg-[#ffffff]");
+  contant2.classList.add("active");
+  contant1.classList.remove("active");
+  contant3.classList.remove("active");
+
+  btn2.classList.add("active");
+  btn1.classList.remove("active");
+  btn3.classList.remove("active");
 });
 btn3.addEventListener("click", function () {
-  contant1.classList.add("hidden");
-  contant1.classList.remove("block");
-  contant2.classList.add("hidden");
-  contant2.classList.remove("block");
-  contant3.classList.add("block");
-  contant3.classList.remove("hidden");
-  btn3.classList.add("bg-[#ffffff]");
-  btn3.classList.remove("bg-[#b6c9f0]");
-  btn2.classList.remove("bg-[#ffffff]");
-  btn1.classList.remove("bg-[#ffffff]");
+  contant3.classList.add("active");
+  contant2.classList.remove("active");
+  contant1.classList.remove("active");
+
+  btn3.classList.add("active");
+  btn2.classList.remove("active");
+  btn1.classList.remove("active");
 });

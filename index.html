@@ -8,61 +8,63 @@
   </head>
   <body class="bg-[#f5abc9] h-screen flex items-center justify-center">
     <main class="bg-[#ffe5e2] w-[700px] p-[16px] rounded-[10px]">
-      <div>
-        <button id="btn1" class="bg-[#b6c9f0] px-5 text-[25px]">step 1</button>
-        <button id="btn2" class="bg-[#b6c9f0] px-5 text-[25px]">step 2</button>
-        <button id="btn3" class="bg-[#b6c9f0] px-5 text-[25px]">step 3</button>
+      <div class="tabs">
+        <button id="btn1" class="active px-5 text-[25px]">step 1</button>
+        <button id="btn2" class="px-5 text-[25px]">step 2</button>
+        <button id="btn3" class="px-5 text-[25px]">step 3</button>
       </div>
-      <div id="contant1">
-        <h1 class="text-[#808080] font-bold">step 1</h1>
-        <span class="text-[#808080]"
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint
-          cumque quasi, amet impedit tempore necessitatibus iste. Ratione
-          possimus perspiciatis sapiente, ex alias, ipsam sint beatae vel
-          repellat aperiam corrupti porro et molestiae nobis itaque recusandae
-          vitae atque! Reiciendis voluptatum molestiae autem consectetur
-          corporis libero itaque quo mollitia quod! Corrupti doloribus veniam
-          iusto soluta laborum saepe debitis reiciendis atque nihil eaque
-          ducimus quo ullam ipsum, laboriosam velit vitae sint, eius molestiae
-          unde, tempora hic ipsam? Cupiditate, beatae. Nostrum eos, id velit
-          nisi libero exercitationem, et fugiat assumenda mollitia debitis
-          deleniti, illum iusto. Officiis, ratione ex? Magni, impedit vel. Quam,
-          eaque.</span
-        >
-      </div>
+      <div class="contans">
+        <div id="contant1" class="active">
+          <h1 class="text-[#808080] font-bold">step 1</h1>
+          <span class="text-[#808080]"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint
+            cumque quasi, amet impedit tempore necessitatibus iste. Ratione
+            possimus perspiciatis sapiente, ex alias, ipsam sint beatae vel
+            repellat aperiam corrupti porro et molestiae nobis itaque recusandae
+            vitae atque! Reiciendis voluptatum molestiae autem consectetur
+            corporis libero itaque quo mollitia quod! Corrupti doloribus veniam
+            iusto soluta laborum saepe debitis reiciendis atque nihil eaque
+            ducimus quo ullam ipsum, laboriosam velit vitae sint, eius molestiae
+            unde, tempora hic ipsam? Cupiditate, beatae. Nostrum eos, id velit
+            nisi libero exercitationem, et fugiat assumenda mollitia debitis
+            deleniti, illum iusto. Officiis, ratione ex? Magni, impedit vel.
+            Quam, eaque.</span
+          >
+        </div>
 
-      <div id="contant2" class="hidden">
-        <h1 class="text-[#808080] font-bold">step 2</h1>
-        <span class="text-[#808080]"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-          asperiores magnam? In expedita laudantium magnam ratione alias minus
-          nemo incidunt, dignissimos architecto placeat corporis molestiae
-          labore vitae ullam laborum ut culpa eaque officiis, blanditiis sunt
-          fugit ex? Neque quod mollitia delectus ipsa? Dolore veritatis, tenetur
-          laudantium possimus unde debitis enim est illum, ea distinctio quod
-          itaque quaerat ex sint eum optio in saepe labore sunt odit? Dolore,
-          iusto! Ducimus sint laudantium consectetur. Velit facere culpa
-          excepturi ad, quae distinctio iure incidunt. Odio alias laboriosam
-          unde quo repudiandae corporis laborum quaerat asperiores minima quis
-          in nam maxime recusandae iure, provident a?</span
-        >
-      </div>
+        <div id="contant2" >
+          <h1 class="text-[#808080] font-bold">step 2</h1>
+          <span class="text-[#808080]"
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            asperiores magnam? In expedita laudantium magnam ratione alias minus
+            nemo incidunt, dignissimos architecto placeat corporis molestiae
+            labore vitae ullam laborum ut culpa eaque officiis, blanditiis sunt
+            fugit ex? Neque quod mollitia delectus ipsa? Dolore veritatis,
+            tenetur laudantium possimus unde debitis enim est illum, ea
+            distinctio quod itaque quaerat ex sint eum optio in saepe labore
+            sunt odit? Dolore, iusto! Ducimus sint laudantium consectetur. Velit
+            facere culpa excepturi ad, quae distinctio iure incidunt. Odio alias
+            laboriosam unde quo repudiandae corporis laborum quaerat asperiores
+            minima quis in nam maxime recusandae iure, provident a?</span
+          >
+        </div>
 
-      <div id="contant3"  class="hidden">
-        <h1 class="text-[#808080] font-bold">step 3</h1>
-        <span class="text-[#808080]"
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-          asperiores magnam? In expedita laudantium magnam ratione alias minus
-          nemo incidunt, dignissimos architecto placeat corporis molestiae
-          labore vitae ullam laborum ut culpa eaque officiis, blanditiis sunt
-          fugit ex? Neque quod mollitia delectus ipsa? Dolore veritatis, tenetur
-          laudantium possimus unde debitis enim est illum, ea distinctio quod
-          itaque quaerat ex sint eum optio in saepe labore sunt odit? Dolore,
-          iusto! Ducimus sint laudantium consectetur. Velit facere culpa
-          excepturi ad, quae distinctio iure incidunt. Odio alias laboriosam
-          unde quo repudiandae corporis laborum quaerat asperiores minima quis
-          in nam maxime recusandae iure, prov?</span
-        >
+        <div id="contant3" >
+          <h1 class="text-[#808080] font-bold">step 3</h1>
+          <span class="text-[#808080]"
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            asperiores magnam? In expedita laudantium magnam ratione alias minus
+            nemo incidunt, dignissimos architecto placeat corporis molestiae
+            labore vitae ullam laborum ut culpa eaque officiis, blanditiis sunt
+            fugit ex? Neque quod mollitia delectus ipsa? Dolore veritatis,
+            tenetur laudantium possimus unde debitis enim est illum, ea
+            distinctio quod itaque quaerat ex sint eum optio in saepe labore
+            sunt odit? Dolore, iusto! Ducimus sint laudantium consectetur. Velit
+            facere culpa excepturi ad, quae distinctio iure incidunt. Odio alias
+            laboriosam unde quo repudiandae corporis laborum quaerat asperiores
+            minima quis in nam maxime recusandae iure, prov?</span
+          >
+        </div>
       </div>
     </main>
     <script src="main.js"></script>

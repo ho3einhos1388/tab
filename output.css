@@ -9,7 +9,6 @@
       "Courier New", monospace;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
-    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -163,35 +162,14 @@
   }
 }
 @layer utilities {
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
-  }
-  .hidden {
-    display: none;
-  }
-  .table {
-    display: table;
-  }
-  .h-full {
-    height: 100%;
   }
   .h-screen {
     height: 100vh;
   }
-  .w-\[700\] {
-    width: 700;
-  }
   .w-\[700px\] {
     width: 700px;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .items-center {
     align-items: center;
@@ -199,33 +177,8 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-\[5pc\] {
-    gap: 5pc;
-  }
-  .gap-\[5px\] {
-    gap: 5px;
-  }
-  .gap-\[20px\] {
-    gap: 20px;
-  }
-  .gap-\[px\] {
-    gap: px;
-  }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-\[10px\] {
     border-radius: 10px;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .bg-\[\#\] {
-    background-color: #;
-  }
-  .bg-\[\#b6c9f0\] {
-    background-color: #b6c9f0;
   }
   .bg-\[\#f5abc9\] {
     background-color: #f5abc9;
@@ -233,41 +186,14 @@
   .bg-\[\#ffe5e2\] {
     background-color: #ffe5e2;
   }
-  .bg-\[\#ffffff\] {
-    background-color: #ffffff;
-  }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
-  .p-20 {
-    padding: calc(var(--spacing) * 20);
-  }
   .p-\[16px\] {
     padding: 16px;
-  }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .text-\[2px\] {
-    font-size: 2px;
-  }
-  .text-\[15px\] {
-    font-size: 15px;
-  }
-  .text-\[20px\] {
-    font-size: 20px;
-  }
   .text-\[25px\] {
     font-size: 25px;
-  }
-  .text-\[30px\] {
-    font-size: 30px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -276,50 +202,27 @@
   .text-\[\#808080\] {
     color: #808080;
   }
-  .text-\[\#8080808\] {
-    color: #8080808;
-  }
-  .text-\[\#\] {
-    color: #;
-  }
-  .text-\[px\] {
-    color: px;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .hover\:bg-\[\#E93B81\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #E93B81;
-      }
-    }
-  }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+.tabs button.active {
+  background: transparent;
+}
+.tabs button:not(.active) {
+  background: #b6c9f0;
+}
+.contans div.active {
+  display: block;
+}
+.contans div:not(.active) {
+  display: none;
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
